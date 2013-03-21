@@ -1,0 +1,43 @@
+%h2 Your receipt
+
+Dear 
+= @tenant.name
+welcome to www.friendlyrent.dk
+
+Here is your receipt for the services you just have purchased!
+
+Client name:
+= @tenant.full_name
+
+Receipt number:
+= @tenant.receipt.number
+
+Name of product:
+= @tenant.receipt.product.name
+
+Product conditions:
+= @tenant.receipt.product.time_period
+
+Start of subscription:
+= @tenant.receipt.product.period.start_date
+
+End of subscription:
+= @tenant.receipt.product.period.start_date
+
+Subtotal:
+= @tenant.receipt.product.sub_total
+
+= @tenant.receipt.tax_rate
+Tax:
+= @tenant.receipt.product.tax_cost
+
+Total:
+= @tenant.receipt.product.total_cost
+
+Type of payment:
+= @card.type_name
+
+Card Number:			xxxx-xxxx-xxxx-
+= @card.last_digits
+
+= link_to "Click here to print", "javascript:window.print()"

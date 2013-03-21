@@ -1,0 +1,32 @@
+%h2 Welcome to Friendlyrent.dk
+
+Dear
+= @tenant.name,
+
+We are very glad that you have decided to join us to find that very perfect place which you will soon be calling home.
+
+Get started!
+= link_to "Choose your search preferences now", preferences_path(@tenant)
+
+Improve your searching experience by telling us your search preferences so that we can find you only those properties which suit you.
+
+OR
+
+Return!
+= link_to "Contact Landlord now", contact_landlord_path(@tenant)
+
+Go back to the property you were interested in to contact the landlord and tell us your search preferences later.
+
+
+All our best,
+The 
+= link_to "www.friendlyrent.dk", root_path 
+team
+
+You need more information? Check out 
+= link_to "FAQ", faq_path 
+or watch our
+= link_to "Video", video_path 
+
+Want to change your email preferences? Go to 
+= link_to "Mail preferences", mail_preferences_path(@tenant)

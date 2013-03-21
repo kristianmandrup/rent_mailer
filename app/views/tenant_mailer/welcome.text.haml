@@ -1,0 +1,21 @@
+Welcome to Friendlyrent.dk
+--------------------------
+
+Dear
+= @tenant.name,
+
+We are very glad that you have decided to join us to find that very perfect place which you will soon be calling home.
+
+Get started!
+= preferences_path(@tenant)
+
+Improve your searching experience by telling us your search preferences so that we can find you only those properties which suit you.
+
+OR
+
+Return! 
+= contact_landlord_path(@tenant)
+
+Go back to the property you were interested in to contact the landlord and tell us your search preferences later.
+
+= render :partial => 'shared/mailer/footer'
